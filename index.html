@@ -4,8 +4,13 @@
     <title>Test Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="titlebar">Cool titlebar</div>
     <div class="top-panel">
         Test
     </div>
@@ -16,6 +21,37 @@
             <a href="#" class="item" data-screen="applications"><i class="mobile alternate icon"></i> Applications</a>
             <a href="#" class="item" data-screen="calibration"><i class="crosshairs icon"></i> Calibration</a>
             <a href="#" class="item" data-screen="tras"><i class="sync icon"></i> Tras Control</a>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Friend</div>
+                <div class="menu">
+                  <div class="item" data-value="jenny">
+                    <img class="ui mini avatar image" src="/images/avatar/small/jenny.png">
+                    Jenny Hess
+                  </div>
+                  <div class="item" data-value="elliot">
+                    <img class="ui mini avatar image" src="/images/avatar/small/elliot.png">
+                    Elliot Fu
+                  </div>
+                  <div class="item" data-value="stevie">
+                    <img class="ui mini avatar image" src="/images/avatar/small/stevie.png">
+                    Stevie Feliciano
+                  </div>
+                  <div class="item" data-value="christian">
+                    <img class="ui mini avatar image" src="/images/avatar/small/christian.png">
+                    Christian
+                  </div>
+                  <div class="item" data-value="matt">
+                    <img class="ui mini avatar image" src="/images/avatar/small/matt.png">
+                    Matt
+                  </div>
+                  <div class="item" data-value="justen">
+                    <img class="ui mini avatar image" src="/images/avatar/small/justen.png">
+                    Justen Kitsune
+                  </div>
+                </div>
+              </div>
         </nav>
         <div class="content-area">
             <div id="screen-content" class="content-panel">
@@ -255,8 +291,5 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

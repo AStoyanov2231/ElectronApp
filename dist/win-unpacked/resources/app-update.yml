@@ -1,0 +1,4 @@
+owner: AStoyanov2231
+repo: ElectronApp
+provider: github
+updaterCacheDirName: my-electron-app-updater

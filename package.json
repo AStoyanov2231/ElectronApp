@@ -1,24 +1,19 @@
 {
   "name": "my-electron-app",
+  "productName": "my-electron-app",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
   "version": "1.0.0",
-  "main": "main.js",
+  "author": "PC",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "electron": "^34.2.0",
-    "electron-builder": "^25.1.8",
-    "electron-packager": "^17.1.2"
+  "dependencies": {
+    "electron-packager": "17.1.2"
   },
-  "build": {
-    "appId": "com.mycompany.myapp",
-    "productName": "MyElectronApp",
-    "win": {
-      "target": "nsis"
-    }
+  "devDependencies": {
+    "electron": "34.2.0"
   }
 }
